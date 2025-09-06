@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISSUE TONG - 메인</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            padding: 15px 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 24px;
+            color: #333;
+            margin: 0;
+        }
+        .container {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .section {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        h2 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4682B4;
+            color: white;
+        }
+        .post {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        .post h3 {
+            margin: 0 0 5px 0;
+        }
+        .post p {
+            margin: 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>📢 ISSUE TONG</h1>
+        <p>환영합니다, **박회장**님!</p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>🗓️ 회의실 예약 타임테이블</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>시간</th>
+                        <th>예약 상태</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>07:00 - 07:55</td><td>✅ 예약 가능</td></tr>
+                    <tr><td>08:00 - 08:55</td><td>❌ 사용 중 (기획부)</td></tr>
+                    <tr><td>09:00 - 09:55</td><td>✅ 예약 가능</td></tr>
+                    </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>💡 회의 안건 게시판</h2>
+            <div class="post">
+                <h3>2학기 축제 부스 운영 방안</h3>
+                <p>작성자: 김회장 (2025-09-07)</p>
+            </div>
+            <div class="post">
+                <h3>신입생 환영회 아이디어 공모</h3>
+                <p>작성자: 이부회장 (2025-09-06)</p>
+            </div>
+            <div class="post">
+                <h3>복도 소음 문제 해결 방안 논의</h3>
+                <p>작성자: 박총무 (2025-09-05)</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
