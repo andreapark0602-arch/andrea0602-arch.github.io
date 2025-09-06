@@ -1,105 +1,78 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ISSUE TONG - Welcome!</title>
-<style>
-/* 폰트 스타일을 미리 불러옵니다 */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-body {
-background-color: #6A82FB; /* 세련된 파란색 계열 배경 */
-font-family: 'Poppins', sans-serif; /* 깔끔하고 현대적인 폰트 */
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
-color: #333;
-}
-.login-container {
-background-color: white;
-padding: 50px 40px;
-border-radius: 20px;
-box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-text-align: center;
-width: 320px;
-transition: transform 0.3s ease; /* 부드러운 전환 효과 */
-}
-.login-container:hover {
-transform: translateY(-5px); /* 마우스를 올리면 살짝 위로 이동 */
-}
-.app-title {
-font-size: 32px;
-font-weight: 700; /* 굵은 글씨체 */
-color: #4A4A4A;
-margin-bottom: 5px;
-}
-.app-subtitle {
-font-size: 14px;
-color: #888;
-margin-bottom: 25px;
-}
-.emoji {
-font-size: 48px;
-margin-bottom: 20px;
-animation: bounce 1.5s infinite; /* 통통 튀는 이모티콘 효과 */
-}
-
-/* 통통 튀는 애니메이션 효과 */
-@keyframes bounce {
-0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-40% {transform: translateY(-20px);}
-60% {transform: translateY(-10px);}
-}
-
-.login-container input {
-width: 100%;
-padding: 12px 15px;
-margin: 8px 0;
-border: 1px solid #ddd;
-border-radius: 8px;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
-transition: border-color 0.3s ease;
-}
-.login-container input:focus {
-outline: none;
-border-color: #6A82FB; /* 입력창 클릭 시 테두리 색상 변경 */
-}
-.login-container button {
-width: 100%;
-padding: 12px;
-margin-top: 15px;
-background: linear-gradient(45deg, #6A82FB, #FC5C7D); /* 그라데이션 버튼 색상 */
-color: white;
-border: none;
-border-radius: 8px;
-cursor: pointer;
-font-size: 16px;
-font-weight: 600;
-transition: opacity 0.3s ease;
-}
-.login-container button:hover {
-opacity: 0.9; /* 마우스를 올리면 살짝 투명하게 */
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISSUE TONG - Welcome!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        body {
+            background-color: #6A82FB;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+        .login-container {
+            background-color: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            text-align: center;
+            width: 320px;
+        }
+        .app-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #4A4A4A;
+            margin-bottom: 5px;
+        }
+        .app-subtitle {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 25px;
+        }
+        .emoji {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background: linear-gradient(45deg, #6A82FB, #FC5C7D);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
-
-<div class="login-container">
-<div class="emoji">📢</div>
-<h1 class="app-title">ISSUE TONG</h1>
-<p class="app-subtitle">우리들의 공식 소통 창구</p>
-
-<form>
-<input type="text" placeholder="이름 (Name)" required>
-<input type="email" placeholder="이메일 (Email)" required>
-<input type="password" placeholder="비밀번호 (Password)" required>
-<button type="submit">로그인 및 회원가입</button>
-</form>
-</div>
-
+    <div class="login-container">
+        <div class="emoji">📢</div>
+        <h1 class="app-title">ISSUE TONG</h1>
+        <p class="app-subtitle">우리들의 공식 소통 창구</p>
+        
+        <form action="main.html">
+            <input type="text" placeholder="이름 (Name)" required>
+            <input type="email" placeholder="이메일 (Email)" required>
+            <input type="password" placeholder="비밀번호 (Password)" required>
+            <button type="submit">로그인</button>
+        </form>
+    </div>
 </body>
 </html>
