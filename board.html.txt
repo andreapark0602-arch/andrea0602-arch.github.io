@@ -3,178 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISSUE TONG - 회의 안건</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            background-color: #f4f7f6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: #fff;
-            padding: 15px 30px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header h1 {
-            font-size: 24px;
-            color: #333;
-            margin: 0;
-        }
-        .container {
-            padding: 30px;
-            max-width: 800px;
-            margin: auto;
-        }
-        .post-form, .post-item {
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            margin-bottom: 20px;
-        }
-        h2 {
-            margin-top: 0;
-            color: #333;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        textarea, input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-sizing: border-box;
-            font-family: 'Noto Sans KR', sans-serif;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #6A82FB;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        button:hover {
-            background-color: #5C75E5;
-        }
-        .post-item h3 {
-            margin-top: 0;
-            color: #444;
-            font-size: 20px;
-        }
-        .post-item .author-date {
-            font-size: 14px;
-            color: #777;
-            margin-bottom: 10px;
-        }
-        .post-item .content {
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-        .comments-section {
-            margin-top: 20px;
-            border-top: 1px solid #eee;
-            padding-top: 15px;
-        }
-        .comment {
-            margin-bottom: 10px;
-            padding: 8px 0;
-            border-bottom: 1px dashed #f5f5f5;
-        }
-        .comment:last-child {
-            border-bottom: none;
-        }
-        .comment .comment-author {
-            font-weight: bold;
-            font-size: 13px;
-            color: #555;
-        }
-        .comment-form {
-            margin-top: 15px;
-            display: flex;
-        }
-        .comment-form input {
-            flex-grow: 1; /* 입력창이 최대한 공간을 차지하도록 */
-            margin-right: 10px;
-        }
-        .back-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #6A82FB;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .back-button:hover {
-            background-color: #5C75E5;
-        }
-    </style>
+    <title>청심국제중학교 안건 제시</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1>📢 ISSUE TONG</h1>
-        <a href="main.html" class="back-button">뒤로 가기</a>
+        <h1>📢 청심국제중학교 학생회</h1>
+        <a href="index.html" class="back-button">뒤로 가기</a>
     </header>
-
     <div class="container">
-        <div class="post-form section">
-            <h2>✍️ 새 안건 올리기</h2>
-            <form>
-                <input type="text" placeholder="제목을 입력하세요" required>
-                <textarea rows="4" placeholder="내용을 입력하세요" required></textarea>
-                <button type="submit">안건 등록</button>
-            </form>
-        </div>
-
-        <div class="post-item section">
-            <h3>2학기 축제 부스 운영 방안</h3>
-            <p class="author-date">작성자: 김회장 (2025-09-07)</p>
-            <p class="content">안녕하세요, 학생회장입니다. 다가오는 2학기 축제 때 우리 학생회가 운영할 부스 아이디어에 대해 논의하고자 합니다. 창의적인 의견 부탁드립니다.</p>
-
-            <div class="comments-section">
-                <h4>💬 댓글</h4>
-                <div class="comment">
-                    <p><span class="comment-author">이부회장:</span> 먹거리 부스가 인기가 많을 것 같아요! 솜사탕이나 팝콘 어떨까요?</p>
-                </div>
-                <div class="comment">
-                    <p><span class="comment-author">박총무:</span> 체험형 부스도 좋을 것 같습니다. 예를 들어 페이스 페인팅이나 간단한 게임 같은 거요.</p>
-                </div>
-                <form class="comment-form">
-                    <input type="text" placeholder="댓글을 입력하세요..." required>
-                    <button type="submit">등록</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="post-item section">
-            <h3>신입생 환영회 아이디어 공모</h3>
-            <p class="author-date">작성자: 이부회장 (2025-09-06)</p>
-            <p class="content">내년에 들어올 신입생들을 위한 환영회 아이디어를 공모합니다. 신선하고 재미있는 아이디어를 자유롭게 올려주세요!</p>
-            <div class="comments-section">
-                <h4>💬 댓글</h4>
-                <div class="comment">
-                    <p><span class="comment-author">최서기:</span> 롤링페이퍼 작성 시간을 넣으면 좋을 것 같아요!</p>
-                </div>
-                <form class="comment-form">
-                    <input type="text" placeholder="댓글을 입력하세요..." required>
-                    <button type="submit">등록</button>
-                </form>
-            </div>
+        <div class="section">
+            <h2>💡 안건 제시하기</h2>
+            <p>학생회 안건을 제안하세요. 제출된 내용은 학생회에서 검토합니다. (Google Forms로 Sheets에 기록)</p>
+            <iframe src="https://docs.google.com/forms/d/e/YOUR_AGENDA_FORM_ID/viewform?embedded=true" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">로딩 중...</iframe>
+            <!-- 위 iframe src를 실제 Google Forms 임베드 URL로 교체하세요. -->
+            <p>제출된 안건 목록: <a href="https://docs.google.com/spreadsheets/d/YOUR_AGENDA_SHEET_ID/edit" target="_blank">여기 클릭</a> (전교회장만 편집 가능)</p>
         </div>
     </div>
-
 </body>
 </html>
